@@ -13,6 +13,7 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stddef.h>
+# include <string.h>
 
 size_t		strlcat(char	*restrict dst, const char	*restrict src, size_t	dstsize);
 size_t		ft_strlen(const char *s);

@@ -6,13 +6,13 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/08 12:17:38 by jae               #+#    #+#             */
-/*   Updated: 2020/03/08 12:17:38 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/21 22:14:35 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int	n)
+char	*ft_itoa(int n)
 {
 	size_t	len;
 	long	nbr;
@@ -23,7 +23,7 @@ char	*ft_itoa(int	n)
 	nbr = (nbr > 0) ? nbr : -nbr;
 	while (nbr)
 		nbr = len++ ? nbr / 10 : nbr / 10;
-	if(!(res = (char *)malloc(sizoef(res) * len + 1)))
+	if (!(res = (char *)malloc(sizoef(res) * len + 1)))
 		return (NULL);
 	*(res + len--) = '\0';
 	while (n > 0)

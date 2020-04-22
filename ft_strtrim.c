@@ -6,7 +6,7 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 16:06:02 by jae               #+#    #+#             */
-/*   Updated: 2020/03/06 16:06:02 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/22 08:47:04 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int		is_space(char c)
 		return (0);
 }
 
-char *ft_strtrim(char const *s1, char const *set)
+char			*ft_strtrim(char const *s1, char const *set)
 {
 	int		cnt;
 	char	*res;

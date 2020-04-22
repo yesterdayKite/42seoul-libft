@@ -6,14 +6,14 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 12:46:52 by jae               #+#    #+#             */
-/*   Updated: 2020/03/06 12:46:53 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/21 22:04:00 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-void	*ft_calloc(size_t	count, size_t	size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	unsigned char	*p;
 

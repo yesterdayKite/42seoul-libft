@@ -6,16 +6,16 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 15:55:50 by jae               #+#    #+#             */
-/*   Updated: 2020/03/06 15:55:50 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/21 22:41:46 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char	*dst, const char	*src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	int	i;
 
 	i = 0;
-	while(src[i] != '\0')
+	while (src[i] != '\0')
 	{
 		dst[i] = src[i];
 		i++;

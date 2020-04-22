@@ -6,13 +6,13 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/07 20:02:35 by jae               #+#    #+#             */
-/*   Updated: 2020/03/07 20:02:35 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/21 22:37:47 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_cnt_words(char const	*s, char c)
+static int		ft_cnt_words(char const *s, char c)
 {
 	int		i;
 	int		cnt;
@@ -21,7 +21,7 @@ static int	ft_cnt_words(char const	*s, char c)
 		return (NULL);
 	cnt = 0;
 	i = 0;
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		if (s[i] == c)
 			cnt++;
@@ -30,7 +30,7 @@ static int	ft_cnt_words(char const	*s, char c)
 	return (cnt);
 }
 
-static void		ft_next_word_ptr(char	**word, unsigned int	*word_len, char	c)
+static void		ft_next_word_ptr(char **word, unsigned int *word_len, char c)
 {
 	unsigned int	i;
 
@@ -59,7 +59,7 @@ static char		**ft_my_free(char **res)
 	return (NULL);
 }
 
-char	**ft_split(char const	*s, char	c)
+char			**ft_split(char const *s, char c)
 {
 	char			**res;
 	char			*word;
@@ -70,7 +70,7 @@ char	**ft_split(char const	*s, char	c)
 	if (!s)
 		return (NULL);
 	words_num = cnt_word(s, c);
-	if(!(res = malloc(sizeof(char) * (words_num + 1))))
+	if (!(res = malloc(sizeof(char) * (words_num + 1))))
 		return (NULL);
 	word = (char *)s;
 	word_len = 0;

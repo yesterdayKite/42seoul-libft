@@ -6,13 +6,13 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 19:15:46 by jae               #+#    #+#             */
-/*   Updated: 2020/03/05 19:15:46 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/21 22:24:11 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		*ft_memset(void	*b, int	c, size_t	len)
+void		*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*ptr;
 

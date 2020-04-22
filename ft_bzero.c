@@ -6,13 +6,13 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 21:55:35 by jae               #+#    #+#             */
-/*   Updated: 2020/04/21 21:07:06 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/22 11:06:02 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_bzero(void *b, size_t n)
+void	ft_bzero(void *b, size_t n)
 {
 	unsigned char	*ptr;
 

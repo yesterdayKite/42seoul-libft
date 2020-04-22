@@ -6,22 +6,22 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/28 13:01:28 by jae               #+#    #+#             */
-/*   Updated: 2020/03/01 20:41:44 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/22 19:56:01 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned int cnt;
+	char	*res;
 
-	cnt = -1;
-	while (s[++cnt])
+	res = (char *)s;
+	while (*res != c)
 	{
-		if (s[cnt] == c)
-			return ((char*)s);
-		++s;
+		if (!*res)
+			return (NULL);
+		res++;
 	}
-	if (c == '\0')
-		return ((char*)s);
-	return (0);
+	return (res);
 }

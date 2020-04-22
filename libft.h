@@ -6,7 +6,7 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 18:10:13 by jae               #+#    #+#             */
-/*   Updated: 2020/03/01 18:10:13 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/22 20:09:55 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,12 @@
 # define LIBFT_H
 # include <stddef.h>
 # include <string.h>
-
+# include <stdlib.h>
+# include <unistd.h>
 
 int			ft_isdigit(int c);
 int			ft_atoi(const char *str);
-void		*ft_bzero(void	*b, size_t	n);
+void		ft_bzero(void	*b, size_t	n);
 void		*ft_calloc(size_t	count, size_t	size);
 int			ft_isacii(int c);
 int			ft_isalnum(int c);
@@ -34,17 +35,20 @@ void		*ft_memset(void	*b, int	c, size_t	len);
 void		ft_putchar_fd(char	c, int	fd);
 void		ft_putendl_fd(char	*s, int	fd);
 void		ft_putstr_fd(char	*s, int		fd);
+void		ft_putnbr_fd(int n, int fd);
 char		**ft_split(char const	*s, char	c);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strcpy(char	*dst, const char	*src);
+char		*ft_strdup(const char *src);
+size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t		ft_strlen(const char *s);
-char 		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char 		*ft_strmapi(char const	*s, char (*f)(unsigned int, char));
 int 		ft_strncmp(const char *s1, const char *s2, size_t n);
+char		*ft_strnstr(const char *s1, const char *s2, size_t len);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strtrim(char const *s1, char const *set);
 char		*ft_substr(char const	*s, unsigned int	start, size_t	len);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
-
 
 #endif

@@ -6,13 +6,11 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 12:51:05 by jae               #+#    #+#             */
-/*   Updated: 2020/04/22 08:33:49 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/22 11:58:34 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdlib.h>
 
 char	*ft_strdup(const char *src)
 {

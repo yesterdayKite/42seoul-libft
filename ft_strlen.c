@@ -6,7 +6,7 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 14:59:49 by jae               #+#    #+#             */
-/*   Updated: 2020/02/29 14:59:49 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/22 19:28:58 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	char	*ptr;
-	size_t	cnt;
+	unsigned int	i;
 
-	cnt = 0;
-	while (*ptr++ != '\0')
-		cnt++;
-	return (cnt);
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }

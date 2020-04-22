@@ -6,19 +6,11 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 16:06:02 by jae               #+#    #+#             */
-/*   Updated: 2020/04/22 08:47:04 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/22 12:21:59 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int		is_space(char c)
-{
-	if (c == ' ' || c == '\n' || c == '\t')
-		return (1);
-	else
-		return (0);
-}
 
 char			*ft_strtrim(char const *s1, char const *set)
 {

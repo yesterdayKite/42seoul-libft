@@ -6,7 +6,7 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 22:15:08 by jae               #+#    #+#             */
-/*   Updated: 2020/04/21 22:23:30 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/22 14:15:12 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
+	if (!dst && !src)
+		return (NULL);
 	if (src <= dst)
 	{
 		while (len--)

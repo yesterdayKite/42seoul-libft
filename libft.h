@@ -6,7 +6,7 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 18:10:13 by jae               #+#    #+#             */
-/*   Updated: 2020/04/22 20:25:25 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/24 13:45:38 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int			ft_isdigit(int c);
 int			ft_atoi(const char *str);
 void		ft_bzero(void	*b, size_t	n);
 void		*ft_calloc(size_t	count, size_t	size);
-int			ft_isacii(int c);
+int			ft_isascii(int c);
 int			ft_isalnum(int c);
 int			ft_isalpha(int c);
 int			ft_isprint(int c);
@@ -41,6 +41,8 @@ void		ft_putnbr_fd(int n, int fd);
 char		**ft_split(char const	*s, char	c);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strcpy(char	*dst, const char	*src);
+size_t		ft_strlcat(char *dest, const char *src, size_t size);
+char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strdup(const char *src);
 size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t		ft_strlen(const char *s);

@@ -6,7 +6,7 @@
 /*   By: jae <jae@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 18:10:13 by jae               #+#    #+#             */
-/*   Updated: 2020/04/24 13:45:38 by jae              ###   ########.fr       */
+/*   Updated: 2020/04/25 23:36:14 by jae              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ void		ft_putstr_fd(char	*s, int		fd);
 void		ft_putnbr_fd(int n, int fd);
 char		**ft_split(char const	*s, char	c);
 char		*ft_strchr(const char *s, int c);
-char		*ft_strcpy(char	*dst, const char	*src);
 size_t		ft_strlcat(char *dest, const char *src, size_t size);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strdup(const char *src);
